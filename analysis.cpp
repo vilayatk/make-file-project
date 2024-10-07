@@ -8,7 +8,7 @@ std::string IAnalysis::type() const
 
 double Static::multiplier() const
 {
-    return 1.5;
+    return 1.8;
 }
 
 double Ritz::multiplier() const
