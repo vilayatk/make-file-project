@@ -2,13 +2,13 @@
 CXX = g++
 
 # Compiler flags
-CXXFLAGS = -Wall -g
+CXXFLAGS = -std=c++11
 
 # Target executable
 TARGET = main
 
 # Source files
-SRCS = main.cpp message.cpp
+SRCS = main.cpp analysis.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
@@ -26,7 +26,7 @@ $(TARGET): $(OBJS)
 
 # Rule to run the executable
 run: $(TARGET)
-	./$(TARGET)  # Use ./ to run the executable in Unix-like systems
+	./$(TARGET)
 
 # Clean rule to remove generated files
 clean:
